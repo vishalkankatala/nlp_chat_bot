@@ -19,12 +19,172 @@
           "chines"
         ]
       },
+
+      {
+        "value": "Mumbai",
+        "synonyms": [
+          "bombay"
+        ]
+      },
+      {
+        "value": "Vadodara",
+        "synonyms": [
+          "Baroda"
+        ]
+      },
+      {
+        "value": "Chennai",
+        "synonyms": [
+          "Madras"
+        ]
+      },
+
+      {
+        "value": "Visakhapatnam",
+        "synonyms": [
+          "Vizag",
+          "Waltair"
+        ]
+      },
+
+      {
+        "value": "Thiruvananthapuram",
+        "synonyms": [
+          "Trivandrum"
+        ]
+      },
+
+      {
+        "value": "Kochi",
+        "synonyms": [
+          "Cochin"
+        ]
+      },
+
+      {
+        "value": "Kolkata",
+        "synonyms": [
+          "Calcutta"
+        ]
+      },
+
+      {
+        "value": "Pondicherry",
+        "synonyms": [
+          "Puducherry"
+        ]
+      },
+
+    {
+        "value": "Kanpur",
+        "synonyms": [
+          "Cawnpore"
+        ]
+      },
+
+
+    {
+        "value": "Belgaum",
+        "synonyms": [
+          "Belagavi"
+        ]
+      },
+
+      {
+        "value": "Indore",
+        "synonyms": [
+          "Indhur"
+        ]
+      },
+
+      {
+        "value": "Pune",
+        "synonyms": [
+          "Poona"
+        ]
+      },
+
+      {
+        "value": "Varanasi",
+        "synonyms": [
+          "Benares"
+        ]
+      },
+
+      {
+        "value": "Jabalpur",
+        "synonyms": [
+          "Jubbulpore"
+        ]
+      },
+
+      {
+        "value": "Kozhikode",
+        "synonyms": [
+          "Calicut"
+        ]
+      },
+
+      {
+        "value": "Guwahati",
+        "synonyms": [
+          "Gauhati"
+        ]
+      },
+
+      {
+        "value": "Mysore",
+        "synonyms": [
+          "Mysuru"
+        ]
+      },
+
+      {
+        "value": "Mangalore",
+        "synonyms": [
+          "Mangaluru"
+        ]
+      },
+
+      {
+        "value": "Mangalore",
+        "synonyms": [
+          "Mangaluru"
+        ]
+      },
+
+       {
+        "value": "Banglore",
+        "synonyms": [
+          "Bengaluru"
+        ]
+      },
+
+
       {
         "value": "vegetarian",
         "synonyms": [
           "veggie",
           "vegg"
         ]
+      }
+    ],
+    "lookup_tables": [
+      {"name": "supported_cities",
+       "elements": ["Ahmedabad", "Bangalore", "Chennai", "Delhi", "Hyderabad", "Kanpur", "Kolkata", "Mumbai", "Nagpur", "Pune",
+                    "Agra", "Ajmer", "Aligarh", "Amravati", "Amritsar", "Asansol", "Aurangabad", "Bareilly", "Belgaum",
+                    "Bhavnagar", "Bhiwandi", "Bhopal", "Bhubaneswar", "Bikaner", "Bokaro Steel City", "Chandigarh", "Coimbatore", "Cuttack",
+                    "Dehradun", "Dhanbad", "Durg-Bhilai Nagar", "Durgapur", "Erode", "Faridabad",
+                    "Firozabad", "Ghaziabad", "Gorakhpur", "Gulbarga", "Guntur", "Gurgaon", "Guwahati",
+                    "Gwalior", "Hubli-Dharwad", "Indore", "Jabalpur", "Jaipur", "Jalandhar", "Jammu", "Jamnagar",
+                    "Jamshedpur", "Jhansi", "Jodhpur", "Kannur", "Kakinada", "Kochi", "Kottayam",
+                    "Kolhapur", "Kollam", "Kota", "Kozhikode", "Kurnool", "Lucknow", "Ludhiana", "Madurai",
+                    "Malappuram", "Mathura", "Goa", "Mangalore", "Meerut", "Moradabad", "Mysore", "Nanded",
+                    "Nashik", "Nellore", "Noida", "Palakkad", "Patna", "Pondicherry", "Prayagraj", "Raipur",
+                    "Rajkot", "Rajahmundry", "Ranchi", "Rourkela", "Salem", "Sangli", "Siliguri", "Solapur",
+                    "Srinagar", "Sultanpur", "Surat", "Thiruvananthapuram", "Thrissur", "Tiruchirappalli",
+                    "Tirunelveli", "Tiruppur", "Tiruvannamalai", "Ujjain", "Bijapur", "Vadodara", "Varanasi",
+                    "Vasai-Virar City", "Vijayawada", "Visakhapatnam", "Vellore", "Warangal"]
       }
     ],
     "common_examples": [
@@ -367,6 +527,66 @@
             "start": 3,
             "end": 8,
             "value": "delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Delhi",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Mumbai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Mumbai",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "In Mumbai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "Mumbai",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Guntur",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Guntur",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "In Guntur",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "Guntur",
             "entity": "location"
           }
         ]

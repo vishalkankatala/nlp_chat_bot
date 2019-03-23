@@ -9,6 +9,9 @@
     "utter_goodbye": {
       "slots": []
     },
+    "utter_unsupported": {
+      "slots": []
+    },
     "action_restaurant": {
       "slots": [
         "location"
