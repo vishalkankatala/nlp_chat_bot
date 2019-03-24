@@ -20,37 +20,38 @@ class ActionSendEmail(Action):
         return 'action_send_email'
 
     def run(self, dispatcher, tracker, domain):
-     	send_email='yes'
-        if ( (tracker.get_slot('email_needed') is not None) and (tracker.get_slot('email_needed').strip() is not '')):
-            send_email = tracker.get_slot('email_needed').strip()
-        if (send_email == 'yes'):
-            print("In here!!")
-            receiver_address = tracker.get_slot('email')
-            mail_content = tracker.get_slot('email_content')
-            dispatcher.utter_message('Sending email to '+ receiver_address)
-            sender_address = 'dummy.upgrad@gmail.com'
-            sender_pass = '!Qaz2wsx'
-            # add in the message body
-            msg = MIMEMultipart()
-            msg['From'] = sender_address
-            msg['To'] = receiver_address
-            msg['Subject'] = "Chat Bot Message with list of resturants"
-            #The body and the attachments for the mail
-            msg.attach(MIMEText(mail_content, 'plain'))
-            try:
-                #Create SMTP session for sending the mail
-                session = smtplib.SMTP('smtp.gmail.com', 587) #use gmail with port
-                session.starttls() #enable security
-                session.login(sender_address, sender_pass) #login with mail_id and password
-                text = msg.as_string()
-                session.sendmail(sender_address, receiver_address, text)
-                print('Mail Sent')
-            except Exception as e:
-                # Print any error messages to stdout
-                print(e)
-            finally:
-                session.quit()
-                dispatcher.utter_message("-----" + 'Email sent')
+            send_email='yes'
+            if ( (tracker.get_slot('email_needed') is not None) and (tracker.get_slot('email_needed').strip() is not '')):
+                send_email = tracker.get_slot('email_needed').strip()
+            if (send_email == 'yes'):
+                print("In here!!")
+                receiver_address = tracker.get_slot('email')
+                mail_content = tracker.get_slot('email_content')
+                dispatcher.utter_message('Sending email to '+ receiver_address)
+                sender_address = 'dummy.upgrad@gmail.com'
+                sender_pass = '!Qaz2wsx'
+                # add in the message body
+                msg = MIMEMultipart()
+                msg['From'] = sender_address
+                msg['To'] = receiver_address
+                msg['Subject'] = "Chat Bot Message with list of resturants"
+                #The body and the attachments for the mail
+                msg.attach(MIMEText(mail_content, 'plain'))
+                try:
+                    #Create SMTP session for sending the mail
+                    session = smtplib.SMTP('smtp.gmail.com', 587) #use gmail with port
+                    session.starttls() #enable security
+                    session.login(sender_address, sender_pass) #login with mail_id and password
+                    text = msg.as_string()
+                    session.sendmail(sender_address, receiver_address, text)
+                    print('Mail Sent')
+                except Exception as e:
+                    # Print any error messages to stdout
+                    print(e)
+                finally:
+                    session.quit()
+                    dispatcher.utter_message("-----" + 'Email sent')
+
 
 
 class ActionSearchRestaurants(Action):

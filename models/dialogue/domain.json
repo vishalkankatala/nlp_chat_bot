@@ -6,6 +6,7 @@
     "intent_goodbye",
     "intent_thankyou",
     "intent_restaurant_search",
+    "intent_send_email",
     "entity_location",
     "entity_cuisine",
     "entity_budget",

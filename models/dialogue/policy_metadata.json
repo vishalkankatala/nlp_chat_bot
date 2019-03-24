@@ -2,29 +2,29 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "email",
         "email_needed",
         "cuisine",
         "budget",
+        "email",
         "location"
       ]
     },
     "utter_goodbye": {
       "slots": []
     },
-    "utter_unsupported": {
-      "slots": []
-    },
     "action_restaurant": {
       "slots": [
-        "location",
-        "email_content"
+        "email_content",
+        "location"
       ]
+    },
+    "utter_unsupported": {
+      "slots": []
     }
   },
   "rasa_core": "0.10.1",
   "max_histories": [
-    5,
+    4,
     5
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
