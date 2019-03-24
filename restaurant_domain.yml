@@ -6,11 +6,19 @@ slots:
     type: text
   budget:
     type: text
+  email:
+    type: text
+  email_needed:
+    type: text
+    initial_value: "yes"
+  email_content:
+    type: text
 
 entities:
 - location
 - cuisine
 - budget
+- email
 
 intents:
  - greet
@@ -62,6 +70,13 @@ templates:
           payload: "medium price"
         - title: "high"
           payload: "high"
+  utter_ask_email_needed:
+    - "Should I send you details of all the restaurants on email?"
+    - "Shall I mail the details as well?"
+  utter_ask_email:
+    - "Could you please enter your email id to send the report?"
+    - "We can share details to you via email. Can you share your email id please?"
+    - "Should I send you details of all the restaurants on email?"
 
 actions:
 - utter_greet
@@ -72,4 +87,7 @@ actions:
 - utter_ask_location
 - utter_ask_cuisine
 - utter_ask_budget
+- utter_ask_email_needed
+- utter_ask_email
 - actions.ActionSearchRestaurants
+- actions.ActionSendEmail

@@ -1,0 +1,110 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_unsupported
+- utter_goodbye
+- utter_default
+- utter_ask_howcanhelp
+- utter_ask_location
+- utter_ask_cuisine
+- utter_ask_budget
+- utter_ask_email_needed
+- utter_ask_email
+- action_restaurant
+- action_send_email
+actions:
+- utter_greet
+- utter_unsupported
+- utter_goodbye
+- utter_default
+- utter_ask_howcanhelp
+- utter_ask_location
+- utter_ask_cuisine
+- utter_ask_budget
+- utter_ask_email_needed
+- utter_ask_email
+- actions.ActionSearchRestaurants
+- actions.ActionSendEmail
+config:
+  store_entities_as_slots: true
+entities:
+- location
+- cuisine
+- budget
+- email
+intents:
+- greet
+- affirm
+- deny
+- goodbye
+- thankyou
+- restaurant_search
+slots:
+  budget:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  cuisine:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  email:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  email_content:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  email_needed:
+    initial_value: yes
+    type: rasa_core.slots.TextSlot
+  location:
+    initial_value: unset
+    type: slots.LocationSlot
+templates:
+  utter_ask_budget:
+  - buttons:
+    - payload: low
+      title: low
+    - payload: medium price
+      title: medium price
+    - payload: high
+      title: high
+    text: what is your budget?
+  utter_ask_cuisine:
+  - buttons:
+    - payload: Chinese
+      title: Chinese
+    - payload: Italian
+      title: Italian
+    - payload: South Indian
+      title: South Indian
+    - payload: North Indian
+      title: North Indian
+    - payload: American Cuisine
+      title: American Cuisine
+    - payload: Mexican
+      title: Mexican
+    text: what kind of cuisine would you like?
+  utter_ask_email:
+  - text: Could you please enter your email id to send the report?
+  - text: We can share details to you via email. Can you share your email id please?
+  - text: Should I send you details of all the restaurants on email?
+  utter_ask_email_needed:
+  - text: Should I send you details of all the restaurants on email?
+  - text: Shall I mail the details as well?
+  utter_ask_howcanhelp:
+  - text: how can I help you?
+  utter_ask_location:
+  - text: In what location?
+  utter_default:
+  - text: default message
+  utter_goodbye:
+  - text: goodbye :(
+  - text: Bye-bye
+  utter_greet:
+  - text: hey there! How may i help you
+  - text: Hi, How can I help you!
+  - text: Hey, How is it going. How May I help you Today
+  utter_unsupported:
+  - text: Sorry, we are not supporting that city for now, please pick from Tier-1
+      or Tier-2 Cities
+  - text: Uh oh, we are not supporting that city for now, please pick from Tier-1
+      or Tier-2 Cities
