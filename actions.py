@@ -77,7 +77,7 @@ class ActionSearchRestaurants(Action):
 			sort_order = "desc"
 		else:
 			sort_order = "asc"
-		results=zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), 1000, sort_order)
+		results=zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), 50, sort_order)
 
 		d = json.loads(results)
 		response=""
