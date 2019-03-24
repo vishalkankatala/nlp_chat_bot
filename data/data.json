@@ -358,6 +358,125 @@
           }
         ]
       },
+
+
+      {
+        "text": "Chinese",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+
+      {
+        "text": "low",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "low",
+            "entity": "budget"
+          }
+        ]
+      },
+
+       {
+        "text": "medium price",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "medium price",
+            "entity": "budget"
+          }
+        ]
+      },
+
+      {
+        "text": "high",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "high",
+            "entity": "budget"
+          }
+        ]
+      },
+
+      {
+        "text": "Italian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Italian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+
+      {
+        "text": "Mexican",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Mexican",
+            "entity": "cuisine"
+          }
+        ]
+      },
+
+      {
+        "text": "American Cuisine",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "American Cuisine",
+            "entity": "cuisine"
+          }
+        ]
+      },
+
+      {
+        "text": "North Indian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "North Indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+
+      {
+        "text": "South Indian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "South Indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+
       {
         "text": "i am looking for an indian spot called olaolaolaolaolaola",
         "intent": "restaurant_search",
@@ -762,6 +881,32 @@
             "entity": "location"
           }
         ]
+      },
+
+      {
+        "text": "I am looking for a restaurant in bengaluru to dine for two within rs 1000",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "I am looking for a restaurant to dine for two within rs 1000",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "I am looking for a north indian restaurant in bengaluru to dine for two within rs 1000",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "I am looking for a restaurant in bengaluru to dine for two between rs 500 to 1000",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "I am looking for a restaurant to dine for two between rs 500 to 1000",
+        "intent": "restaurant_search",
+        "entities": []
       }
     ]
   }
