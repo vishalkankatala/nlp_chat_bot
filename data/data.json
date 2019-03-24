@@ -379,7 +379,7 @@
         "entities": [
           {
             "start": 0,
-            "end": 3,
+            "end": 8,
             "value": "economy",
             "entity": "budget"
           }
@@ -392,7 +392,7 @@
         "entities": [
           {
             "start": 0,
-            "end": 13,
+            "end": 6,
             "value": "luxury",
             "entity": "budget"
           }
@@ -405,7 +405,7 @@
         "entities": [
           {
             "start": 0,
-            "end": 4,
+            "end": 8,
             "value": "business",
             "entity": "budget"
           }

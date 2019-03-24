@@ -166,7 +166,7 @@
         "entities": [
           {
             "start": 0,
-            "end": 3,
+            "end": 8,
             "value": "economy",
             "entity": "budget"
           }
@@ -178,7 +178,7 @@
         "entities": [
           {
             "start": 0,
-            "end": 13,
+            "end": 6,
             "value": "luxury",
             "entity": "budget"
           }
@@ -190,7 +190,7 @@
         "entities": [
           {
             "start": 0,
-            "end": 4,
+            "end": 8,
             "value": "business",
             "entity": "budget"
           }
@@ -227,11 +227,11 @@
           {
             "start": 0,
             "end": 17,
-            "value": "American Cuisine",
+            "value": "American",
             "entity": "cuisine"
           }
         ],
-        "text": "American Cuisine"
+        "text": "American"
       },
       {
         "intent": "restaurant_search",
@@ -645,11 +645,11 @@
           {
             "start": 0,
             "end": 15,
-            "value": "santosh@domain.com",
+            "value": "jeswin@domain.com",
             "entity": "email"
           }
         ],
-        "text": "santosh@domain.com"
+        "text": "jeswin@domain.com"
       },
       {
         "intent": "send_email",
@@ -657,11 +657,11 @@
           {
             "start": 27,
             "end": 42,
-            "value": "santosh@domain.com",
+            "value": "jeswin@domain.com",
             "entity": "email"
           }
         ],
-        "text": "I want to send a report to santosh@domain.com"
+        "text": "I want to send a report to jeswin@domain.com"
       },
       {
         "intent": "send_email",
@@ -849,11 +849,11 @@
           {
             "start": 17,
             "end": 32,
-            "value": "santosh@abc.com",
+            "value": "jeswin@abc.com",
             "entity": "email"
           }
         ],
-        "text": "yeah. send it to santosh@abc.com"
+        "text": "yeah. send it to jeswin@abc.com"
       },
       {
         "intent": "send_email",
@@ -891,11 +891,11 @@
           {
             "start": 24,
             "end": 39,
-            "value": "santosh@xyz.com",
+            "value": "jeswin@xyz.com",
             "entity": "email"
           }
         ],
-        "text": "yes, please. send it to santosh@xyz.com"
+        "text": "yes, please. send it to jeswin@xyz.com"
       },
       {
         "intent": "send_email",
@@ -909,11 +909,11 @@
           {
             "start": 26,
             "end": 41,
-            "value": "santosh@xyz.com",
+            "value": "jeswin@xyz.com",
             "entity": "email"
           }
         ],
-        "text": "yes. please send email to santosh@xyz.com"
+        "text": "yes. please send email to jeswin@xyz.com"
       },
       {
         "intent": "restaurant_search",

@@ -3,10 +3,10 @@
     "action_listen": {
       "slots": [
         "email",
+        "email_needed",
         "cuisine",
         "budget",
-        "location",
-        "email_needed"
+        "location"
       ]
     },
     "utter_goodbye": {

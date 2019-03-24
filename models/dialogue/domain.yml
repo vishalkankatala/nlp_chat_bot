@@ -78,8 +78,8 @@ templates:
       title: South Indian
     - payload: North Indian
       title: North Indian
-    - payload: American Cuisine
-      title: American Cuisine
+    - payload: American
+      title: American
     - payload: Mexican
       title: Mexican
     text: what kind of cuisine would you like?
