@@ -2,11 +2,11 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "cuisine",
         "email",
-        "budget",
         "location",
-        "email_needed"
+        "budget",
+        "email_needed",
+        "cuisine"
       ]
     },
     "utter_goodbye": {
@@ -17,8 +17,8 @@
     },
     "action_restaurant": {
       "slots": [
-        "email_content",
-        "location"
+        "location",
+        "email_content"
       ]
     }
   },

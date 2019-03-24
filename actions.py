@@ -20,12 +20,14 @@ class ActionSendEmail(Action):
         return 'action_send_email'
 
     def run(self, dispatcher, tracker, domain):
-            send_email='yes'
-            if ( (tracker.get_slot('email_needed') is not None) and (tracker.get_slot('email_needed').strip() is not '')):
-                send_email = tracker.get_slot('email_needed').strip()
+            #print("In here first!!")
+            send_email=tracker.get_slot('email_needed')
+            #print("In here first!!"+send_email)
             if (send_email == 'yes'):
-                print("In here!!")
+                #print("In here mail!!")
                 receiver_address = tracker.get_slot('email')
+                print("In here mail!!" + receiver_address )
+                print("receiver_address is " + receiver_address)
                 mail_content = tracker.get_slot('email_content')
                 dispatcher.utter_message('Sending email to '+ receiver_address)
                 sender_address = 'dummy.upgrad@gmail.com'
