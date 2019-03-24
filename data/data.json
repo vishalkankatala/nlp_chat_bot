@@ -374,39 +374,39 @@
       },
 
       {
-        "text": "low",
+        "text": "economy",
         "intent": "restaurant_search",
         "entities": [
           {
             "start": 0,
             "end": 3,
-            "value": "low",
+            "value": "economy",
             "entity": "budget"
           }
         ]
       },
 
        {
-        "text": "medium price",
+        "text": "luxury",
         "intent": "restaurant_search",
         "entities": [
           {
             "start": 0,
             "end": 13,
-            "value": "medium price",
+            "value": "luxury",
             "entity": "budget"
           }
         ]
       },
 
       {
-        "text": "high",
+        "text": "business",
         "intent": "restaurant_search",
         "entities": [
           {
             "start": 0,
             "end": 4,
-            "value": "high",
+            "value": "business",
             "entity": "budget"
           }
         ]
@@ -439,13 +439,13 @@
       },
 
       {
-        "text": "American Cuisine",
+        "text": "American",
         "intent": "restaurant_search",
         "entities": [
           {
             "start": 0,
             "end": 17,
-            "value": "American Cuisine",
+            "value": "American",
             "entity": "cuisine"
           }
         ]
@@ -861,25 +861,25 @@
         ]
       },
       {
-        "text": "santosh@domain.com",
+        "text": "jeswin@domain.com",
         "intent": "send_email",
         "entities": [
           {
             "start": 0,
             "end": 15,
-            "value": "santosh@domain.com",
+            "value": "jeswin@domain.com",
             "entity": "email"
           }
         ]
       },
       {
-        "text": "I want to send a report to santosh@domain.com",
+        "text": "I want to send a report to jeswin@domain.com",
         "intent": "send_email",
         "entities": [
           {
             "start": 27,
             "end": 42,
-            "value": "santosh@domain.com",
+            "value": "jeswin@domain.com",
             "entity": "email"
           }
         ]
@@ -1059,7 +1059,7 @@
         ]
       },
       {
-        "text": "yeah. send it to santosh@abc.com",
+        "text": "yeah. send it to jeswin@abc.com",
         "intent": "send_email",
         "entities": [
           {
@@ -1071,7 +1071,7 @@
           {
             "start": 17,
             "end": 32,
-            "value": "santosh@abc.com",
+            "value": "jeswin@abc.com",
             "entity": "email"
           }
         ]
@@ -1101,7 +1101,7 @@
         ]
       },
       {
-        "text": "yes, please. send it to santosh@xyz.com",
+        "text": "yes, please. send it to jeswin@xyz.com",
         "intent": "send_email",
         "entities": [
           {
@@ -1113,13 +1113,13 @@
           {
             "start": 24,
             "end": 39,
-            "value": "santosh@xyz.com",
+            "value": "jeswin@xyz.com",
             "entity": "email"
           }
         ]
       },
       {
-        "text": "yes. please send email to santosh@xyz.com",
+        "text": "yes. please send email to jeswin@xyz.com",
         "intent": "send_email",
         "entities": [
           {
@@ -1131,7 +1131,7 @@
           {
             "start": 26,
             "end": 41,
-            "value": "santosh@xyz.com",
+            "value": "jeswin@xyz.com",
             "entity": "email"
           }
         ]

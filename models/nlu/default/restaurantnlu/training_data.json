@@ -167,11 +167,11 @@
           {
             "start": 0,
             "end": 3,
-            "value": "low",
+            "value": "economy",
             "entity": "budget"
           }
         ],
-        "text": "low"
+        "text": "economy"
       },
       {
         "intent": "restaurant_search",
@@ -179,11 +179,11 @@
           {
             "start": 0,
             "end": 13,
-            "value": "medium price",
+            "value": "luxury",
             "entity": "budget"
           }
         ],
-        "text": "medium price"
+        "text": "luxury"
       },
       {
         "intent": "restaurant_search",
@@ -191,11 +191,11 @@
           {
             "start": 0,
             "end": 4,
-            "value": "high",
+            "value": "business",
             "entity": "budget"
           }
         ],
-        "text": "high"
+        "text": "business"
       },
       {
         "intent": "restaurant_search",

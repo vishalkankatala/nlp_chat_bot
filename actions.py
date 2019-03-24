@@ -9,7 +9,7 @@ import json
 import csv
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-import smtplib
+import smtplib, ssl
 from rasa_core.policies.fallback import FallbackPolicy
 from rasa_core.policies.keras_policy import KerasPolicy
 from rasa_core.agent import Agent
@@ -26,21 +26,22 @@ class ActionSendEmail(Action):
         if (send_email == 'yes'):
             print("In here!!")
             to_address = tracker.get_slot('email')
-            email_body = tracker.get_slot('email_content')
+            email_text = tracker.get_slot('email_content')
             dispatcher.utter_message('Sending email to '+to_address)
             gmail_user = "dummy.upgrad@gmail.com"
             gmail_password = "!Qaz2wsx"
+            context = ssl.create_default_context()
             try:
-                server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+                server = smtplib.SMTP_SSL('smtp.gmail.com', 465,context)
                 server.ehlo()
                 server.login(gmail_user, gmail_password)
                 msg = MIMEMultipart()  # create a message
                 # setup the parameters of the message
-                msg['From'] = gmail_user 
+                msg['From'] = gmail_user
                 msg['To'] = to_address
                 msg['Subject'] = "Chat Bot Message with list of resturants"
                 # add in the message body
-                msg.attach(MIMEText(email_body, 'plain'))
+                msg.attach(MIMEText(email_text, 'plain'))
                 # send the message via the server set up earlier.
                 server.send_message(msg)
                 server.close()
@@ -52,13 +53,13 @@ class ActionSendEmail(Action):
 class ActionSearchRestaurants(Action):
 	def name(self):
 		return 'action_restaurant'
-		
+
 	def run(self, dispatcher, tracker, domain):
 		config={ "user_key":"6ce88a5ec1419e335afa1c7f92f4b739"}
 		zomato = zomatopy.initialize_app(config)
 		loc = tracker.get_slot('location')
 		cuisine = tracker.get_slot('cuisine')
-		
+		budget = tracker.get_slot('budget')
 		resturant_result = pd.DataFrame(columns=['id','name', 'address', 'rating', 'avg_price'])
 
 		location_detail=zomato.get_location(loc, 1)
@@ -81,12 +82,11 @@ class ActionSearchRestaurants(Action):
 		print("Original Df \n", sort_by_rating.head())
 		email_response = "List of top rated restaurants: \n"
 		chat_response = "Showing you top rated restaurants: \n"
-		
+
 		for i in sort_by_rating.index:
 			email_response = email_response + "Restaurant " + sort_by_rating.loc[i,'name'] + " in "+ sort_by_rating.loc[i,'address'] + "And the average price for two people here is: " + str(sort_by_rating.loc[i,'avg_price']) + " Rs. And has been rating is: " + sort_by_rating.loc[i,'rating'] + "\n"
 			if i < 5:
-				chat_response = chat_response + "Restaurant " + sort_by_rating.loc[i,'name'] + " in "+ sort_by_rating.loc[i,'address'] + "And the average price for two people here is: " + str(sort_by_rating.loc[i,'avg_price']) + " Rs. And has been rating is: " + sort_by_rating.loc[i,'rating'] + "\n"		
-		
+				chat_response = chat_response + "Restaurant " + sort_by_rating.loc[i,'name'] + " in "+ sort_by_rating.loc[i,'address'] + "And the average price for two people here is: " + str(sort_by_rating.loc[i,'avg_price']) + " Rs. And has been rating is: " + sort_by_rating.loc[i,'rating'] + "\n"
+
 		dispatcher.utter_message("-----"+response)
 		return [SlotSet('location',loc),SlotSet('email_content', email_response)]
-

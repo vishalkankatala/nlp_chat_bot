@@ -53,8 +53,8 @@ templates:
         payload: "South Indian"
       - title: "North Indian"
         payload: "North Indian"
-      - title: "American Cuisine"
-        payload: "American Cuisine"
+      - title: "American"
+        payload: "American"
       - title: "Mexican"
         payload: "Mexican"
   utter_ask_howcanhelp:
@@ -64,12 +64,12 @@ templates:
   utter_ask_budget:
     - text: "what is your budget?"
       buttons:
-        - title: "low"
-          payload: "low"
-        - title: "medium price"
-          payload: "medium price"
-        - title: "high"
-          payload: "high"
+        - title: "economy(Under Rs 300)"
+          payload: "economy"
+        - title: "luxury(Between 300 to 700)"
+          payload: "luxury"
+        - title: "business(Above 700)"
+          payload: "business"
   utter_ask_email_needed:
     - "Should I send you details of all the restaurants on email?"
     - "Shall I mail the details as well?"

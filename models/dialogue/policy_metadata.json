@@ -2,11 +2,11 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "location",
-        "email_needed",
+        "email",
         "cuisine",
         "budget",
-        "email"
+        "location",
+        "email_needed"
       ]
     },
     "utter_goodbye": {
@@ -20,9 +20,6 @@
         "location",
         "email_content"
       ]
-    },
-    "action_send_email": {
-      "slots": []
     }
   },
   "rasa_core": "0.10.1",

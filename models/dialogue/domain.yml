@@ -61,12 +61,12 @@ slots:
 templates:
   utter_ask_budget:
   - buttons:
-    - payload: low
-      title: low
-    - payload: medium price
-      title: medium price
-    - payload: high
-      title: high
+    - payload: economy
+      title: economy(Under Rs 300)
+    - payload: luxury
+      title: luxury(Between 300 to 700)
+    - payload: business
+      title: business(Above 700)
     text: what is your budget?
   utter_ask_cuisine:
   - buttons:

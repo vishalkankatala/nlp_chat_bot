@@ -9,8 +9,8 @@
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - utter_ask_budget
-* restaurant_search{"budget": "low"}
-    - slot{"budget": "low"}
+* restaurant_search{"budget": "economy"}
+    - slot{"budget": "economy"}
     - action_restaurant
     - utter_ask_email_needed
 * send_email{"email_needed": "yes"}
@@ -22,7 +22,7 @@
     - utter_goodbye
     - export
 
-## Generated Story 255706069223404498
+## Generated Story 155706069223404498
 * greet
     - utter_greet
 * restaurant_search
@@ -33,8 +33,8 @@
 * restaurant_search{"cuisine": "mexican"}
     - slot{"cuisine": "mexican"}
     - utter_ask_budget
-* restaurant_search{"budget": "low"}
-    - slot{"budget": "low"}
+* restaurant_search{"budget": "economy"}
+    - slot{"budget": "economy"}
     - action_restaurant
     - utter_ask_email_needed
 * send_email{"email_needed": "yes"}
@@ -57,8 +57,8 @@
 * restaurant_search{"cuisine": "north indian"}
     - slot{"cuisine": "north indian"}
     - utter_ask_budget
-* restaurant_search{"Price": "medium price"}
-    - slot{"budget": "medium price"}
+* restaurant_search{"Price": "luxury"}
+    - slot{"budget": "luxury"}
     - action_restaurant
     - utter_ask_email_needed
 * send_email{"email_needed": "yes"}
@@ -71,7 +71,7 @@
     - export
 
 
-## Generated Story 255706069223404498
+## Generated Story 125706069223404498
 * greet
     - utter_greet
 * restaurant_search
@@ -82,14 +82,14 @@
 * restaurant_search{"cuisine": "mexican"}
     - slot{"cuisine": "mexican"}
     - utter_ask_budget
-* restaurant_search{"budget": "low"}
-    - slot{"budget": "low"}
+* restaurant_search{"budget": "economy"}
+    - slot{"budget": "economy"}
     - action_restaurant
 * restaurant_search{"email_needed": "no"}
     - slot{"email_needed": "no"}
     - utter_goodbye
     - export
-## Generated Story 255706069223404498
+## Generated Story 255706015223404498
 * greet
     - utter_greet
 * restaurant_search
@@ -97,11 +97,11 @@
 * restaurant_search{"location": "delhi"}
     - slot{"location": "delhi"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "American Cuisine"}
-    - slot{"cuisine": "American Cuisine"}
+* restaurant_search{"cuisine": "American"}
+    - slot{"cuisine": "American"}
     - utter_ask_budget
-* restaurant_search{"budget": "low"}
-    - slot{"budget": "low"}
+* restaurant_search{"budget": "economy"}
+    - slot{"budget": "economy"}
     - action_restaurant
     - utter_goodbye
     - export
@@ -117,8 +117,8 @@
 * restaurant_search{"cuisine": "North Indian"}
     - slot{"cuisine": "North Indian"}
     - utter_ask_budget
-* restaurant_search{"budget": "high"}
-    - slot{"budget": "high"}
+* restaurant_search{"budget": "business"}
+    - slot{"budget": "business"}
     - action_restaurant
     - utter_goodbye
 
@@ -133,8 +133,8 @@
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - utter_ask_budget
-* restaurant_search{"budget": "medium price"}
-    - slot{"budget": "medium price"}
+* restaurant_search{"budget": "luxury"}
+    - slot{"budget": "luxury"}
     - action_restaurant
 * goodbye
     - utter_goodbye
@@ -150,8 +150,8 @@
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - utter_ask_budget
-* restaurant_search{"budget": "high"}
-    - slot{"budget": "high"}
+* restaurant_search{"budget": "business"}
+    - slot{"budget": "business"}
     - action_restaurant
     - export
 
@@ -211,7 +211,7 @@
 * restaurant_search
     - export
 
-## Generated Story -3848786846984597762
+## Generated Story 3848786846984597762
 * greet
     - utter_greet
 * restaurant_search{"cuisine": "south indian"}
@@ -233,8 +233,8 @@
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - utter_ask_budget
-* restaurant_search{"budget": "medium price"}
-    - slot{"budget": "medium price"}
+* restaurant_search{"budget": "luxury"}
+    - slot{"budget": "luxury"}
     - action_restaurant
     - slot{"location": "pune"}
     - slot{"email_content": "Diggin in 10, Santushti Shopping Complex, Race Course Road, Chanakyapuri, New Delhi has been rating is: 4.3\nChili's Grill & Bar in 3rd Floor, Ambience Mall, Nelson Madela Road, Vasant Kunj, New Delhi\nThe Quick Wok in Unit 2, Chili's Grill & Bar in S 8 & 9, 2nd Floor, Pacific Mall, Tagore Garden, New Delhi has been rating is: 4.1\narage Inc. in 30, 2nd Floor, Powerhouse Buliding, Hauz Khas Village, New Delhi has been rating is: 4.1\nSummer House Cafe in 1st Floor, DDA Shopping Complex, Aurobindo Place, Hauz Khas, New Delhi has been rating is: 4.0\n"}
