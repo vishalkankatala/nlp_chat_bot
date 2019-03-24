@@ -27,6 +27,7 @@ intents:
  - goodbye
  - thankyou
  - restaurant_search
+ - send_email
 
 
 templates:
