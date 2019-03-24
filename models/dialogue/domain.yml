@@ -1,6 +1,7 @@
 action_factory: null
 action_names:
 - utter_greet
+- utter_unsupported
 - utter_goodbye
 - utter_default
 - utter_ask_howcanhelp
@@ -9,6 +10,7 @@ action_names:
 - action_restaurant
 actions:
 - utter_greet
+- utter_unsupported
 - utter_goodbye
 - utter_default
 - utter_ask_howcanhelp
@@ -32,8 +34,8 @@ slots:
     initial_value: null
     type: rasa_core.slots.TextSlot
   location:
-    initial_value: null
-    type: rasa_core.slots.TextSlot
+    initial_value: unset
+    type: slots.LocationSlot
 templates:
   utter_ask_cuisine:
   - buttons:
@@ -59,3 +61,8 @@ templates:
   - text: hey there! How may i help you
   - text: Hi, How can I help you!
   - text: Hey, How is it going. How May I help you Today
+  utter_unsupported:
+  - text: Sorry, we are not supporting that city for now, please pick from Tier-1
+      or Tier-2 Cities
+  - text: Uh oh, we are not supporting that city for now, please pick from Tier-1
+      or Tier-2 Cities

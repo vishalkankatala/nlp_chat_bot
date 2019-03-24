@@ -14,6 +14,7 @@
     "prev_action_restart",
     "prev_action_default_fallback",
     "prev_utter_greet",
+    "prev_utter_unsupported",
     "prev_utter_goodbye",
     "prev_utter_default",
     "prev_utter_ask_howcanhelp",

@@ -1,6 +1,7 @@
 slots:
   location:
-    type: text
+    type: slots.LocationSlot
+    initial_value: "unset"
   cuisine:
     type: text
 
@@ -22,6 +23,9 @@ templates:
     - "hey there! How may i help you"
     - "Hi, How can I help you!"
     - "Hey, How is it going. How May I help you Today"
+  utter_unsupported:
+    - "Sorry, we are not supporting that city for now, please pick from Tier-1 or Tier-2 Cities"
+    - "Uh oh, we are not supporting that city for now, please pick from Tier-1 or Tier-2 Cities"
   utter_goodbye:
     - "goodbye :("
     - "Bye-bye"
@@ -45,6 +49,7 @@ templates:
 
 actions:
 - utter_greet
+- utter_unsupported
 - utter_goodbye
 - utter_default
 - utter_ask_howcanhelp

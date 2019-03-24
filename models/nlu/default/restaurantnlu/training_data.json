@@ -325,6 +325,66 @@
         "intent": "restaurant_search",
         "entities": [
           {
+            "start": 0,
+            "end": 5,
+            "value": "delhi",
+            "entity": "location"
+          }
+        ],
+        "text": "Delhi"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Mumbai",
+            "entity": "location"
+          }
+        ],
+        "text": "Mumbai"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "Mumbai",
+            "entity": "location"
+          }
+        ],
+        "text": "In Mumbai"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Guntur",
+            "entity": "location"
+          }
+        ],
+        "text": "Guntur"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "Guntur",
+            "entity": "location"
+          }
+        ],
+        "text": "In Guntur"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
             "start": 3,
             "end": 8,
             "value": "Delhi",
@@ -503,6 +563,121 @@
           "Chinese",
           "Chines",
           "chines"
+        ]
+      },
+      {
+        "value": "Mumbai",
+        "synonyms": [
+          "bombay"
+        ]
+      },
+      {
+        "value": "Vadodara",
+        "synonyms": [
+          "Baroda"
+        ]
+      },
+      {
+        "value": "Chennai",
+        "synonyms": [
+          "Madras"
+        ]
+      },
+      {
+        "value": "Visakhapatnam",
+        "synonyms": [
+          "Vizag",
+          "Waltair"
+        ]
+      },
+      {
+        "value": "Thiruvananthapuram",
+        "synonyms": [
+          "Trivandrum"
+        ]
+      },
+      {
+        "value": "Kochi",
+        "synonyms": [
+          "Cochin"
+        ]
+      },
+      {
+        "value": "Kolkata",
+        "synonyms": [
+          "Calcutta"
+        ]
+      },
+      {
+        "value": "Pondicherry",
+        "synonyms": [
+          "Puducherry"
+        ]
+      },
+      {
+        "value": "Kanpur",
+        "synonyms": [
+          "Cawnpore"
+        ]
+      },
+      {
+        "value": "Belgaum",
+        "synonyms": [
+          "Belagavi"
+        ]
+      },
+      {
+        "value": "Indore",
+        "synonyms": [
+          "Indhur"
+        ]
+      },
+      {
+        "value": "Pune",
+        "synonyms": [
+          "Poona"
+        ]
+      },
+      {
+        "value": "Varanasi",
+        "synonyms": [
+          "Benares"
+        ]
+      },
+      {
+        "value": "Jabalpur",
+        "synonyms": [
+          "Jubbulpore"
+        ]
+      },
+      {
+        "value": "Kozhikode",
+        "synonyms": [
+          "Calicut"
+        ]
+      },
+      {
+        "value": "Guwahati",
+        "synonyms": [
+          "Gauhati"
+        ]
+      },
+      {
+        "value": "Mysore",
+        "synonyms": [
+          "Mysuru"
+        ]
+      },
+      {
+        "value": "Mangalore",
+        "synonyms": [
+          "Mangaluru"
+        ]
+      },
+      {
+        "value": "Banglore",
+        "synonyms": [
+          "Bengaluru"
         ]
       },
       {
