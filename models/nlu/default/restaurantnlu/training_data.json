@@ -1,305 +1,95 @@
 {
   "rasa_nlu_data": {
-    "regex_features": [
-      {
-        "name": "zipcode",
-        "pattern": "[0-9]{5}"
-      },
-      {
-        "name": "greet",
-        "pattern": "hey[^\\s]*"
-      }
-    ],
-    "entity_synonyms": [
-      {
-        "value": "chinese",
-        "synonyms": [
-          "Chinese",
-          "Chines",
-          "chines"
-        ]
-      },
-
-      {
-        "value": "Mumbai",
-        "synonyms": [
-          "bombay"
-        ]
-      },
-      {
-        "value": "Vadodara",
-        "synonyms": [
-          "Baroda"
-        ]
-      },
-      {
-        "value": "Chennai",
-        "synonyms": [
-          "Madras"
-        ]
-      },
-
-      {
-        "value": "Visakhapatnam",
-        "synonyms": [
-          "Vizag",
-          "Waltair"
-        ]
-      },
-
-      {
-        "value": "Thiruvananthapuram",
-        "synonyms": [
-          "Trivandrum"
-        ]
-      },
-
-      {
-        "value": "Kochi",
-        "synonyms": [
-          "Cochin"
-        ]
-      },
-
-      {
-        "value": "Kolkata",
-        "synonyms": [
-          "Calcutta"
-        ]
-      },
-
-      {
-        "value": "Pondicherry",
-        "synonyms": [
-          "Puducherry"
-        ]
-      },
-
-    {
-        "value": "Kanpur",
-        "synonyms": [
-          "Cawnpore"
-        ]
-      },
-
-
-    {
-        "value": "Belgaum",
-        "synonyms": [
-          "Belagavi"
-        ]
-      },
-
-      {
-        "value": "Indore",
-        "synonyms": [
-          "Indhur"
-        ]
-      },
-
-      {
-        "value": "Pune",
-        "synonyms": [
-          "Poona"
-        ]
-      },
-
-      {
-        "value": "Varanasi",
-        "synonyms": [
-          "Benares"
-        ]
-      },
-
-      {
-        "value": "Jabalpur",
-        "synonyms": [
-          "Jubbulpore"
-        ]
-      },
-
-      {
-        "value": "Kozhikode",
-        "synonyms": [
-          "Calicut"
-        ]
-      },
-
-      {
-        "value": "Guwahati",
-        "synonyms": [
-          "Gauhati"
-        ]
-      },
-
-      {
-        "value": "Mysore",
-        "synonyms": [
-          "Mysuru"
-        ]
-      },
-
-      {
-        "value": "Mangalore",
-        "synonyms": [
-          "Mangaluru"
-        ]
-      },
-
-      {
-        "value": "Mangalore",
-        "synonyms": [
-          "Mangaluru"
-        ]
-      },
-
-       {
-        "value": "Banglore",
-        "synonyms": [
-          "Bengaluru"
-        ]
-      },
-
-
-      {
-        "value": "vegetarian",
-        "synonyms": [
-          "veggie",
-          "vegg"
-        ]
-      }
-    ],
-    "lookup_tables": [
-      {"name": "supported_cities",
-       "elements": ["Ahmedabad", "Bangalore", "Chennai", "Delhi", "Hyderabad", "Kanpur", "Kolkata", "Mumbai", "Nagpur", "Pune",
-                    "Agra", "Ajmer", "Aligarh", "Amravati", "Amritsar", "Asansol", "Aurangabad", "Bareilly", "Belgaum",
-                    "Bhavnagar", "Bhiwandi", "Bhopal", "Bhubaneswar", "Bikaner", "Bokaro Steel City", "Chandigarh", "Coimbatore", "Cuttack",
-                    "Dehradun", "Dhanbad", "Durg-Bhilai Nagar", "Durgapur", "Erode", "Faridabad",
-                    "Firozabad", "Ghaziabad", "Gorakhpur", "Gulbarga", "Guntur", "Gurgaon", "Guwahati",
-                    "Gwalior", "Hubli-Dharwad", "Indore", "Jabalpur", "Jaipur", "Jalandhar", "Jammu", "Jamnagar",
-                    "Jamshedpur", "Jhansi", "Jodhpur", "Kannur", "Kakinada", "Kochi", "Kottayam",
-                    "Kolhapur", "Kollam", "Kota", "Kozhikode", "Kurnool", "Lucknow", "Ludhiana", "Madurai",
-                    "Malappuram", "Mathura", "Goa", "Mangalore", "Meerut", "Moradabad", "Mysore", "Nanded",
-                    "Nashik", "Nellore", "Noida", "Palakkad", "Patna", "Pondicherry", "Prayagraj", "Raipur",
-                    "Rajkot", "Rajahmundry", "Ranchi", "Rourkela", "Salem", "Sangli", "Siliguri", "Solapur",
-                    "Srinagar", "Sultanpur", "Surat", "Thiruvananthapuram", "Thrissur", "Tiruchirappalli",
-                    "Tirunelveli", "Tiruppur", "Tiruvannamalai", "Ujjain", "Bijapur", "Vadodara", "Varanasi",
-                    "Vasai-Virar City", "Vijayawada", "Visakhapatnam", "Vellore", "Warangal"]
-      }
-    ],
     "common_examples": [
       {
-        "text": "hey",
         "intent": "greet",
-        "entities": []
+        "text": "hey"
       },
       {
-        "text": "howdy",
         "intent": "greet",
-        "entities": []
+        "text": "howdy"
       },
       {
-        "text": "hey there",
         "intent": "greet",
-        "entities": []
+        "text": "hey there"
       },
       {
-        "text": "hello",
         "intent": "greet",
-        "entities": []
+        "text": "hello"
       },
       {
-        "text": "hi",
         "intent": "greet",
-        "entities": []
+        "text": "hi"
       },
       {
-        "text": "good morning",
         "intent": "greet",
-        "entities": []
+        "text": "good morning"
       },
       {
-        "text": "good evening",
         "intent": "greet",
-        "entities": []
+        "text": "good evening"
       },
       {
-        "text": "dear sir",
         "intent": "greet",
-        "entities": []
+        "text": "dear sir"
       },
       {
-        "text": "yes",
         "intent": "affirm",
-        "entities": []
+        "text": "yes"
       },
       {
-        "text": "yep",
         "intent": "affirm",
-        "entities": []
+        "text": "yep"
       },
       {
-        "text": "yeah",
         "intent": "affirm",
-        "entities": []
+        "text": "yeah"
       },
       {
-        "text": "indeed",
         "intent": "affirm",
-        "entities": []
+        "text": "indeed"
       },
       {
-        "text": "that's right",
         "intent": "affirm",
-        "entities": []
+        "text": "that's right"
       },
       {
-        "text": "ok",
         "intent": "affirm",
-        "entities": []
+        "text": "ok"
       },
       {
-        "text": "great",
         "intent": "affirm",
-        "entities": []
+        "text": "great"
       },
       {
-        "text": "right, thank you",
         "intent": "affirm",
-        "entities": []
+        "text": "right, thank you"
       },
       {
-        "text": "correct",
         "intent": "affirm",
-        "entities": []
+        "text": "correct"
       },
       {
-        "text": "great choice",
         "intent": "affirm",
-        "entities": []
+        "text": "great choice"
       },
       {
-        "text": "sounds really good",
         "intent": "affirm",
-        "entities": []
+        "text": "sounds really good"
       },
       {
-        "text": "i'm looking for a place to eat",
         "intent": "restaurant_search",
-        "entities": []
+        "text": "i'm looking for a place to eat"
       },
       {
-        "text": "I want to grab lunch",
         "intent": "restaurant_search",
-        "entities": []
+        "text": "I want to grab lunch"
       },
       {
-        "text": "I am searching for a dinner spot",
         "intent": "restaurant_search",
-        "entities": []
+        "text": "I am searching for a dinner spot"
       },
       {
-        "text": "i'm looking for a place in the north of town",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -308,10 +98,10 @@
             "value": "north",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "i'm looking for a place in the north of town"
       },
       {
-        "text": "show me chinese restaurants",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -320,10 +110,10 @@
             "value": "chinese",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "show me chinese restaurants"
       },
       {
-        "text": "show me chines restaurants in the north",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -338,10 +128,10 @@
             "value": "north",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "show me chines restaurants in the north"
       },
       {
-        "text": "show me a mexican place in the centre",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -356,12 +146,10 @@
             "value": "mexican",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "show me a mexican place in the centre"
       },
-
-
       {
-        "text": "Chinese",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -370,11 +158,10 @@
             "value": "Chinese",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "Chinese"
       },
-
       {
-        "text": "economy",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -383,11 +170,10 @@
             "value": "economy",
             "entity": "budget"
           }
-        ]
+        ],
+        "text": "economy"
       },
-
-       {
-        "text": "luxury",
+      {
         "intent": "restaurant_search",
         "entities": [
           {
@@ -396,11 +182,10 @@
             "value": "luxury",
             "entity": "budget"
           }
-        ]
+        ],
+        "text": "luxury"
       },
-
       {
-        "text": "business",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -409,11 +194,10 @@
             "value": "business",
             "entity": "budget"
           }
-        ]
+        ],
+        "text": "business"
       },
-
       {
-        "text": "Italian",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -422,11 +206,10 @@
             "value": "Italian",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "Italian"
       },
-
       {
-        "text": "Mexican",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -435,24 +218,22 @@
             "value": "Mexican",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "Mexican"
       },
-
       {
-        "text": "American",
         "intent": "restaurant_search",
         "entities": [
           {
             "start": 0,
             "end": 17,
-            "value": "American",
+            "value": "American Cuisine",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "American Cuisine"
       },
-
       {
-        "text": "North Indian",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -461,11 +242,10 @@
             "value": "North Indian",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "North Indian"
       },
-
       {
-        "text": "South Indian",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -474,11 +254,10 @@
             "value": "South Indian",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "South Indian"
       },
-
       {
-        "text": "i am looking for an indian spot called olaolaolaolaolaola",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -487,15 +266,14 @@
             "value": "indian",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "i am looking for an indian spot called olaolaolaolaolaola"
       },
       {
-        "text": "search for restaurants",
         "intent": "restaurant_search",
-        "entities": []
+        "text": "search for restaurants"
       },
       {
-        "text": "anywhere in the west",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -504,10 +282,10 @@
             "value": "west",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "anywhere in the west"
       },
       {
-        "text": "anywhere near 18328",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -516,10 +294,10 @@
             "value": "18328",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "anywhere near 18328"
       },
       {
-        "text": "I am looking for asian fusion food",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -528,10 +306,10 @@
             "value": "asian fusion",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "I am looking for asian fusion food"
       },
       {
-        "text": "I am looking a restaurant in 29432",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -540,10 +318,10 @@
             "value": "29432",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "I am looking a restaurant in 29432"
       },
       {
-        "text": "in London",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -552,10 +330,10 @@
             "value": "London",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "in London"
       },
       {
-        "text": "South Indian",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -564,10 +342,10 @@
             "value": "South Indian",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "South Indian"
       },
       {
-        "text": "North Indian",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -576,10 +354,10 @@
             "value": "North Indian",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "North Indian"
       },
       {
-        "text": "Italian",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -588,10 +366,10 @@
             "value": "Italian",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "Italian"
       },
       {
-        "text": "Chinese",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -600,10 +378,10 @@
             "value": "chinese",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "Chinese"
       },
       {
-        "text": "chinese",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -612,10 +390,10 @@
             "value": "chinese",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "chinese"
       },
       {
-        "text": "Lithuania",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -624,10 +402,10 @@
             "value": "Lithuania",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "Lithuania"
       },
       {
-        "text": "Oh, sorry, in Italy",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -636,10 +414,10 @@
             "value": "Italy",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "Oh, sorry, in Italy"
       },
       {
-        "text": "in delhi",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -648,10 +426,10 @@
             "value": "delhi",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "in delhi"
       },
       {
-        "text": "Delhi",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -660,10 +438,10 @@
             "value": "delhi",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "Delhi"
       },
       {
-        "text": "Mumbai",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -672,10 +450,10 @@
             "value": "Mumbai",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "Mumbai"
       },
       {
-        "text": "In Mumbai",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -684,10 +462,10 @@
             "value": "Mumbai",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "In Mumbai"
       },
       {
-        "text": "Guntur",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -696,10 +474,10 @@
             "value": "Guntur",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "Guntur"
       },
       {
-        "text": "In Guntur",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -708,10 +486,10 @@
             "value": "Guntur",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "In Guntur"
       },
       {
-        "text": "In Delhi",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -720,10 +498,10 @@
             "value": "Delhi",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "In Delhi"
       },
       {
-        "text": "In Delhi.",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -732,10 +510,10 @@
             "value": "Delhi",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "In Delhi."
       },
       {
-        "text": "I am looking for some restaurants in bangalore.",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -744,10 +522,10 @@
             "value": "bangalore",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "I am looking for some restaurants in bangalore."
       },
       {
-        "text": "I am looking for some restaurants in pune",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -756,10 +534,10 @@
             "value": "pune",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "I am looking for some restaurants in pune"
       },
       {
-        "text": "I am looking for some restaurants in delhi",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -768,10 +546,10 @@
             "value": "delhi",
             "entity": "location"
           }
-        ]
+        ],
+        "text": "I am looking for some restaurants in delhi"
       },
       {
-        "text": "I am looking for mexican indian fusion",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -780,10 +558,10 @@
             "value": "mexican indian fusion",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "I am looking for mexican indian fusion"
       },
       {
-        "text": "can you book a table in rome in a moderate price range with british food for four people",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -810,10 +588,10 @@
             "value": "4",
             "entity": "people"
           }
-        ]
+        ],
+        "text": "can you book a table in rome in a moderate price range with british food for four people"
       },
       {
-        "text": "example@domain.com",
         "intent": "send_email",
         "entities": [
           {
@@ -822,10 +600,10 @@
             "value": "sample@domain.com",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "example@domain.com"
       },
       {
-        "text": "domain@sample.com",
         "intent": "send_email",
         "entities": [
           {
@@ -834,10 +612,10 @@
             "value": "domain@example.com",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "domain@sample.com"
       },
       {
-        "text": "send email to example@domain.com",
         "intent": "send_email",
         "entities": [
           {
@@ -846,10 +624,10 @@
             "value": "example@domain.com",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "send email to example@domain.com"
       },
       {
-        "text": "send email report to example@domain.com",
         "intent": "send_email",
         "entities": [
           {
@@ -858,34 +636,34 @@
             "value": "example@domain.com",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "send email report to example@domain.com"
       },
       {
-        "text": "jeswin@domain.com",
         "intent": "send_email",
         "entities": [
           {
             "start": 0,
             "end": 15,
-            "value": "jeswin@domain.com",
+            "value": "santosh@domain.com",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "santosh@domain.com"
       },
       {
-        "text": "I want to send a report to jeswin@domain.com",
         "intent": "send_email",
         "entities": [
           {
             "start": 27,
             "end": 42,
-            "value": "jeswin@domain.com",
+            "value": "santosh@domain.com",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "I want to send a report to santosh@domain.com"
       },
       {
-        "text": "my email is abxqqasasa@example.com",
         "intent": "send_email",
         "entities": [
           {
@@ -894,10 +672,10 @@
             "value": "abxqqasasa@example.com",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "my email is abxqqasasa@example.com"
       },
       {
-        "text": "my email is abxqqasasa@example.net",
         "intent": "send_email",
         "entities": [
           {
@@ -906,10 +684,10 @@
             "value": "abxqqasasa@example.net",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "my email is abxqqasasa@example.net"
       },
       {
-        "text": "email is abxqqasasa@example.net",
         "intent": "send_email",
         "entities": [
           {
@@ -918,10 +696,10 @@
             "value": "abxqqasasa@example.net",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "email is abxqqasasa@example.net"
       },
       {
-        "text": "email id is a@b.com",
         "intent": "send_email",
         "entities": [
           {
@@ -930,10 +708,10 @@
             "value": "a@b.com",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "email id is a@b.com"
       },
       {
-        "text": "email = a@b.com",
         "intent": "send_email",
         "entities": [
           {
@@ -942,10 +720,10 @@
             "value": "a@b.com",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "email = a@b.com"
       },
       {
-        "text": "a@b.com",
         "intent": "send_email",
         "entities": [
           {
@@ -954,10 +732,10 @@
             "value": "a@b.com",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "a@b.com"
       },
       {
-        "text": "dummy@world.net",
         "intent": "send_email",
         "entities": [
           {
@@ -966,10 +744,10 @@
             "value": "dummy@world.net",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "dummy@world.net"
       },
       {
-        "text": "an email address may look like dummy@world.net",
         "intent": "send_email",
         "entities": [
           {
@@ -978,10 +756,10 @@
             "value": "dummy@world.net",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "an email address may look like dummy@world.net"
       },
       {
-        "text": "send to dummy@world.net",
         "intent": "send_email",
         "entities": [
           {
@@ -990,10 +768,10 @@
             "value": "dummy@world.net",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "send to dummy@world.net"
       },
       {
-        "text": "send an email to dummy@world-new.net",
         "intent": "send_email",
         "entities": [
           {
@@ -1002,10 +780,10 @@
             "value": "dummy@world-new.net",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "send an email to dummy@world-new.net"
       },
       {
-        "text": "Yes. Send to abc@xyz.com",
         "intent": "send_email",
         "entities": [
           {
@@ -1020,10 +798,10 @@
             "value": "abc@xyz.com",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "Yes. Send to abc@xyz.com"
       },
       {
-        "text": "no. dont send email.",
         "intent": "send_email",
         "entities": [
           {
@@ -1032,10 +810,10 @@
             "value": "no",
             "entity": "email_needed"
           }
-        ]
+        ],
+        "text": "no. dont send email."
       },
       {
-        "text": "yes.",
         "intent": "send_email",
         "entities": [
           {
@@ -1044,10 +822,10 @@
             "value": "yes",
             "entity": "email_needed"
           }
-        ]
+        ],
+        "text": "yes."
       },
       {
-        "text": "yeah.",
         "intent": "send_email",
         "entities": [
           {
@@ -1056,10 +834,10 @@
             "value": "yes",
             "entity": "email_needed"
           }
-        ]
+        ],
+        "text": "yeah."
       },
       {
-        "text": "yeah. send it to jeswin@abc.com",
         "intent": "send_email",
         "entities": [
           {
@@ -1071,13 +849,13 @@
           {
             "start": 17,
             "end": 32,
-            "value": "jeswin@abc.com",
+            "value": "santosh@abc.com",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "yeah. send it to santosh@abc.com"
       },
       {
-        "text": "nopes",
         "intent": "send_email",
         "entities": [
           {
@@ -1086,10 +864,10 @@
             "value": "no",
             "entity": "email_needed"
           }
-        ]
+        ],
+        "text": "nopes"
       },
       {
-        "text": "no, thanks.",
         "intent": "send_email",
         "entities": [
           {
@@ -1098,10 +876,10 @@
             "value": "no",
             "entity": "email_needed"
           }
-        ]
+        ],
+        "text": "no, thanks."
       },
       {
-        "text": "yes, please. send it to jeswin@xyz.com",
         "intent": "send_email",
         "entities": [
           {
@@ -1113,13 +891,13 @@
           {
             "start": 24,
             "end": 39,
-            "value": "jeswin@xyz.com",
+            "value": "santosh@xyz.com",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "yes, please. send it to santosh@xyz.com"
       },
       {
-        "text": "yes. please send email to jeswin@xyz.com",
         "intent": "send_email",
         "entities": [
           {
@@ -1131,13 +909,13 @@
           {
             "start": 26,
             "end": 41,
-            "value": "jeswin@xyz.com",
+            "value": "santosh@xyz.com",
             "entity": "email"
           }
-        ]
+        ],
+        "text": "yes. please send email to santosh@xyz.com"
       },
       {
-        "text": "central indian restaurant",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -1152,50 +930,42 @@
             "value": "indian",
             "entity": "cuisine"
           }
-        ]
+        ],
+        "text": "central indian restaurant"
       },
       {
-        "text": "bye",
         "intent": "goodbye",
-        "entities": []
+        "text": "bye"
       },
       {
-        "text": "goodbye",
         "intent": "goodbye",
-        "entities": []
+        "text": "goodbye"
       },
       {
-        "text": "good bye",
         "intent": "goodbye",
-        "entities": []
+        "text": "good bye"
       },
       {
-        "text": "stop",
         "intent": "goodbye",
-        "entities": []
+        "text": "stop"
       },
       {
-        "text": "end",
         "intent": "goodbye",
-        "entities": []
+        "text": "end"
       },
       {
-        "text": "farewell",
         "intent": "goodbye",
-        "entities": []
+        "text": "farewell"
       },
       {
-        "text": "Bye bye",
         "intent": "goodbye",
-        "entities": []
+        "text": "Bye bye"
       },
       {
-        "text": "have a good one",
         "intent": "goodbye",
-        "entities": []
+        "text": "have a good one"
       },
       {
-        "text": "please help me to find restaurants in pune",
         "intent": "restaurant_search",
         "entities": [
           {
@@ -1204,32 +974,170 @@
             "value": "pune",
             "entity": "location"
           }
+        ],
+        "text": "please help me to find restaurants in pune"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I am looking for a restaurant in bengaluru to dine for two within rs 1000"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I am looking for a restaurant to dine for two within rs 1000"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I am looking for a north indian restaurant in bengaluru to dine for two within rs 1000"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I am looking for a restaurant in bengaluru to dine for two between rs 500 to 1000"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I am looking for a restaurant to dine for two between rs 500 to 1000"
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      },
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "chinese",
+        "synonyms": [
+          "Chinese",
+          "Chines",
+          "chines"
         ]
       },
       {
-        "text": "I am looking for a restaurant in bengaluru to dine for two within rs 1000",
-        "intent": "restaurant_search",
-        "entities": []
+        "value": "Mumbai",
+        "synonyms": [
+          "bombay"
+        ]
       },
       {
-        "text": "I am looking for a restaurant to dine for two within rs 1000",
-        "intent": "restaurant_search",
-        "entities": []
+        "value": "Vadodara",
+        "synonyms": [
+          "Baroda"
+        ]
       },
       {
-        "text": "I am looking for a north indian restaurant in bengaluru to dine for two within rs 1000",
-        "intent": "restaurant_search",
-        "entities": []
+        "value": "Chennai",
+        "synonyms": [
+          "Madras"
+        ]
       },
       {
-        "text": "I am looking for a restaurant in bengaluru to dine for two between rs 500 to 1000",
-        "intent": "restaurant_search",
-        "entities": []
+        "value": "Visakhapatnam",
+        "synonyms": [
+          "Vizag",
+          "Waltair"
+        ]
       },
       {
-        "text": "I am looking for a restaurant to dine for two between rs 500 to 1000",
-        "intent": "restaurant_search",
-        "entities": []
+        "value": "Thiruvananthapuram",
+        "synonyms": [
+          "Trivandrum"
+        ]
+      },
+      {
+        "value": "Kochi",
+        "synonyms": [
+          "Cochin"
+        ]
+      },
+      {
+        "value": "Kolkata",
+        "synonyms": [
+          "Calcutta"
+        ]
+      },
+      {
+        "value": "Pondicherry",
+        "synonyms": [
+          "Puducherry"
+        ]
+      },
+      {
+        "value": "Kanpur",
+        "synonyms": [
+          "Cawnpore"
+        ]
+      },
+      {
+        "value": "Belgaum",
+        "synonyms": [
+          "Belagavi"
+        ]
+      },
+      {
+        "value": "Indore",
+        "synonyms": [
+          "Indhur"
+        ]
+      },
+      {
+        "value": "Pune",
+        "synonyms": [
+          "Poona"
+        ]
+      },
+      {
+        "value": "Varanasi",
+        "synonyms": [
+          "Benares"
+        ]
+      },
+      {
+        "value": "Jabalpur",
+        "synonyms": [
+          "Jubbulpore"
+        ]
+      },
+      {
+        "value": "Kozhikode",
+        "synonyms": [
+          "Calicut"
+        ]
+      },
+      {
+        "value": "Guwahati",
+        "synonyms": [
+          "Gauhati"
+        ]
+      },
+      {
+        "value": "Mysore",
+        "synonyms": [
+          "Mysuru"
+        ]
+      },
+      {
+        "value": "Mangalore",
+        "synonyms": [
+          "Mangaluru"
+        ]
+      },
+      {
+        "value": "Banglore",
+        "synonyms": [
+          "Bengaluru"
+        ]
+      },
+      {
+        "value": "vegetarian",
+        "synonyms": [
+          "veggie",
+          "vegg"
+        ]
       }
     ]
   }
