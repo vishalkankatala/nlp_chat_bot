@@ -57,7 +57,7 @@
 * restaurant_search{"cuisine": "north indian"}
     - slot{"cuisine": "north indian"}
     - utter_ask_budget
-* restaurant_search{"Price": "luxury"}
+* restaurant_search{"budget": "luxury"}
     - slot{"budget": "luxury"}
     - action_restaurant
     - utter_ask_email_needed
