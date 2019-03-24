@@ -4,10 +4,13 @@ slots:
     initial_value: "unset"
   cuisine:
     type: text
+  budget:
+    type: text
 
 entities:
 - location
 - cuisine
+- budget
 
 intents:
  - greet
@@ -42,10 +45,23 @@ templates:
         payload: "South Indian"
       - title: "North Indian"
         payload: "North Indian"
+      - title: "American Cuisine"
+        payload: "American Cuisine"
+      - title: "Mexican"
+        payload: "Mexican"
   utter_ask_howcanhelp:
     - "how can I help you?"
   utter_ask_location:
     - "In what location?"
+  utter_ask_budget:
+    - text: "what is your budget?"
+      buttons:
+        - title: "low"
+          payload: "low"
+        - title: "medium price"
+          payload: "medium price"
+        - title: "high"
+          payload: "high"
 
 actions:
 - utter_greet
@@ -55,4 +71,5 @@ actions:
 - utter_ask_howcanhelp
 - utter_ask_location
 - utter_ask_cuisine
+- utter_ask_budget
 - actions.ActionSearchRestaurants
